@@ -1,0 +1,35 @@
+#gallery{
+  
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(29, 29, 36, .75);
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    padding: 0 70px;
+    gap: 40px;
+    margin-bottom: 120px;
+    
+    .gallery-image {
+      cursor: pointer;
+      object-fit: cover;
+      width:100%;
+      border-radius: 4px;
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+}

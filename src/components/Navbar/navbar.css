@@ -1,0 +1,72 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInNavbar 0.5s ease-out forwards;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Nav.scrolled {
+    background-color: white;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1) !important;
+
+    .NavLinks a {
+        color: #1e1e1e;
+    }
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.NavLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.NavLinks a {
+    height: 70px;
+    line-height: 70px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.NavLinks a.active {
+    color: #39a0ed !important;
+}
+
+.NavLinks a.active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #39a0ed;
+    height: 3px;
+    animation: underlineSlide 0.3s ease-in-out forwards;
+}
+
+@keyframes underlineSlide {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

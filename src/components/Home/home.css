@@ -1,0 +1,39 @@
+#home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 160px 20%;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#home.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #00010c;
+  opacity: 0.4;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 90px;
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+.price-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.price-list.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.price-card {
+  width: 500px;
+  border: 2px solid #3f78c9;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #6b9dd6;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3f78c9;
+  margin: 5px 0;
+}
+
+.dollar {
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #3f78c9, #5a9ef5);
+  color: white;
+}
+
+.price-card:hover .price,
+.price-card:hover .small-text {
+  color: white;
+}

@@ -1,0 +1,26 @@
+.topButton {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+    color: #39a0ed;
+    transition: 0.3s ease;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    z-index: 10000;
+    height: 4rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.appear {
+      opacity: 1;
+    }
+
+    &.disappear{
+      opacity: 0;
+    }
+}
