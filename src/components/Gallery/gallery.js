@@ -4,7 +4,41 @@ import 'yet-another-react-lightbox/styles.css';
 import { useState } from "react";
 
 const images = [
-  { src: '/images/image-gallery-1.jpg', width: 1013, height: 1800 }];
+  { src: '/images/image-gallery-2.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-3.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-4.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-5.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-6.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-7.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-8.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-9.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-2.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-3.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-4.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-5.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-6.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-7.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-8.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-9.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-2.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-3.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-4.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-5.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-6.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-7.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-8.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-9.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-2.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-3.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-4.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-5.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-6.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-7.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-8.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-9.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-7.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-8.jpg', width: 1013, height: 1800 },
+  { src: '/images/image-gallery-10.jpg', width: 1013, height: 1800 }];
 
 function Gallery() {
   const [index, setIndex] = useState(-1);

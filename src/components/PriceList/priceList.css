@@ -11,6 +11,7 @@
 .price-list.visible {
   opacity: 1;
   transform: translateY(0);
+  padding-bottom: 400px;
 }
 
 .price-card {
